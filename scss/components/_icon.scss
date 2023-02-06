@@ -1,0 +1,83 @@
+.c-icon{
+  &::after {
+    font-family: var(--icon-font);
+    display:inline-block;
+    font-size: 1.3rem;
+    color: currentColor;
+    line-height: 1;
+    font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 60
+  }
+  &.previous {
+    &::after {
+      content: "\e408";
+    }
+  }
+  &.next {
+    &::after {
+      content: "\e409";
+    }
+  }
+  &.expand {
+    &::after {
+      content: "\e5cf";
+      padding: 0 0 0 10px;
+
+      pointer-events: none;
+    }
+  }
+  &.cart {
+    &::after {
+      content: "\f1cc";
+
+    }
+  }
+  &.close {
+    &::after {
+      content: "\e5cd";
+    }
+  }
+  &.search {
+    &::after {
+      content: "\e8b6";
+    }
+  }
+  &.phone {
+    &::after {
+      content: "\e0b0";
+    }
+  }
+  &.address {
+    &::after {
+      content: "\e55b";
+    }
+  }
+  &.star {
+    &::after {
+      content: "\ef76";
+    }
+  }
+  &.id {
+    &::after {
+      content: "\ea67";
+    }
+  }
+  &.cb {
+    &::after {
+      content: "\e870";
+    }
+  }
+  &.store {
+    &::after {
+      content: "\e8d1";
+    }
+  }
+  &.--hero {
+    &::after {
+      font-size: 40px;
+    }
+  }
+}

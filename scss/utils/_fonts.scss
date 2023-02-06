@@ -1,0 +1,93 @@
+// function
+@function rem($value) {
+  $result: $value / 16px;
+  @return $result * 1rem;
+}
+
+// color
+$f-colors: (primary, secondary, dark, light);
+@each $color in $f-colors {
+  .f-color_#{$color} {
+    color: var(--#{$color});
+  }
+}
+
+// family
+$f-families: (primary, secondary,secondary-italic,logo);
+@each $family in $f-families {
+  .f-family_#{$family} {
+    font-family: var(--font-family-#{$family});
+    transition: color 0.7s ease;
+    @if($family ==primary) {
+      letter-spacing: 0.05em;
+    }
+  }
+}
+
+//size
+$f-sizes: (
+        12px : 1rem,
+        14px : 1.25rem,
+        16px : 1.5rem,
+        18px : 1.75rem,
+        20px : 1.75rem,
+        24px : 2rem,
+        30px : 2.25rem,
+        36px : 2.5rem,
+        48px : 1,
+        60px : 1,
+        72px : 1,
+        96px : 1,
+        128px : 1,
+);
+@each $size, $ln in $f-sizes {
+  .f-#{$size} {
+    font-size: rem($size);
+    line-height: $ln;
+  }
+}
+
+$medias: (m-tp:640px, m-t:768px, m-l:1024px, m-d:1280px);
+@each $media, $value in $medias {
+  @media (min-width: $value) {
+    @each $size, $ln in $f-sizes {
+      .#{$media}\:f-#{$size} {
+        font-size: rem($size);
+        line-height: $ln;
+      }
+
+    }
+  }
+}
+
+//weight
+$f-weights: (400, 500, 600, 700);
+@each $weight in $f-weights {
+  .f-#{$weight} {
+    font-weight: $weight;
+  }
+}
+
+// align
+.f-center {
+  text-align: center;
+}
+
+// hidden
+.f-hidden {
+  overflow: hidden;
+  line-height: 1.25;
+}
+
+// text-transform
+.f-upper {
+  text-transform: uppercase;
+}
+
+.f-lower {
+  text-transform: lowercase;
+}
+
+.f-capitalize {
+  text-transform: capitalize;
+}

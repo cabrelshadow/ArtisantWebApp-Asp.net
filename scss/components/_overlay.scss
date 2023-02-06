@@ -1,0 +1,16 @@
+#overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 820;
+  background: var(--dark);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  &.is-active {
+    pointer-events: auto;
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: none;
+
+  &::selection {
+    background: var(--primary);
+    color: var(--light)
+  }
+}
+*:focus-visible {
+  outline: auto;
+}
+::after, ::before {
+  box-sizing: border-box;
+}
+
+img,
+video,
+iframe {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+svg {
+  pointer-events: none;
+}
+
+span, a, strong {
+  display: inline-block;
+}
+
+a, button, span {
+  color: inherit;
+  text-transform: inherit;
+}
+
+a {
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  @extend .f-family_primary;
+}
+
+button {
+  cursor: pointer;
+  display: flex;
+}
+canvas {
+  pointer-events: none;
+}
+
+body,html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--gsw) var(--bg);
+  min-height: 100%;
+  height: auto;
+}
+html {
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: initial;
+  &.s {
+    overflow: hidden;
+  }
+}
+
+body {
+  background: var(--bg);
+  position: relative;
+  font-family: var(--font-family-secondary);
+}
+
+
+#app {
+  width: 100%;
+  height: 100%;
+
+}
+
+.page {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  background: var(--bg);
+}
+
+
+@media screen and (min-width: 1024px) {
+  .ua-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .ua-desktop {
+    display: none;
+  }
+}
+

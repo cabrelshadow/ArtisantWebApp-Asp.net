@@ -1,0 +1,47 @@
+header {
+  @include _inset(32px, 32px, auto, 32px);
+  position: fixed;
+  z-index: 739;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+
+.ul-nav {
+  display: flex;
+
+  li {
+    overflow: hidden;
+    position: relative;
+
+    &:hover, &.is-active {
+      span {
+        transform: translateY(-100%) ;
+        opacity: 0.5;
+      }
+
+      a {
+        transform: translateY(0) rotate(0deg);
+      }
+    }
+  }
+
+  span, a {
+    padding: 0 8px;
+    transition: 0.7s;
+  }
+
+  span {
+    cursor: pointer;
+  }
+
+  a {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    transform: translateY(100%) rotate(7deg);
+
+  }
+}

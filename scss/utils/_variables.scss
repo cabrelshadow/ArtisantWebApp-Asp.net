@@ -1,0 +1,96 @@
+@mixin _inset($top, $left,$bottom,$right) {
+  top: $top;
+  left: $left;
+  bottom: $bottom;
+  right: $right;
+}
+@mixin mobile-flex($value) {
+  flex-direction: column;
+  align-items: center;
+
+  & > * {
+    width: $value;
+  }
+}
+
+@mixin gap-x($value) {
+  > * + * {
+    padding-top: $value;
+  }
+}
+@mixin gap-y($value) {
+  > * + * {
+    padding-left: $value;
+  }
+}
+:root {
+  /* color */
+  --gsw:#26282a;
+  --primary: var(--gsw);
+  --secondary: #FCFCFC;
+  --light:#FCFCFC;
+  --dark:#181719;
+  --l-grey:#F2EFE9;
+  --grey: #798086;
+  --bg: #F2F2F2;
+
+  /* icon */
+  --icon-font: "Material Symbols Outlined";
+  --icon-font-size:20px;
+  /* font-family */
+  --font-family-primary :'NewTitle-Variable';
+  --font-family-secondary:'Amulya-Variable';
+  --font-family-secondary-italic:'Amulya-VariableItalic';
+  --font-family-logo: 'NewTitle-Variable';
+  /* utils */
+  --min-height:100vh;
+  --header-height: 90px;
+  --cb: cubic-bezier(.17, .84, .44, 1);
+  --ease-o3: cubic-bezier(0.33, 1, 0.68, 1);
+  --border-radius-lg: 0px;
+  --border-radius-md: 0px;
+  /* --hover : none | hover*/
+  --hover: none;
+  /*
+    media query
+   */
+  --m-tablet-portrait :640px;
+  --m-tablet: 768px;
+  --m-laptop: 1024px;
+  --m-desktop:1280px;
+
+}
+//z-index
+$z-index: (
+        -1,0,1,2
+);
+@each $index in $z-index {
+  .z\:#{$index} {
+    z-index: $index;
+  }
+}
+
+@media screen and (min-aspect-ratio: 14/10) and (orientation: landscape) {
+
+}
+
+
+//@media (min-width: 1536px) { ... }
+
+/*
+
+
+#Spacing
+  - 4px : 0.25rem
+  - 8px : 0.5rem
+  - 12px : 0.75rem
+  - 16px : 1rem
+  - 24px : .5rem
+  - 32px : 2rem
+  - 48px : 3 rem
+  - 64px : 4rem
+  - 96px : 6rem
+  - 128px : 8rem
+  - 192px : 12rem
+  - 256px : 16rem
+ */
