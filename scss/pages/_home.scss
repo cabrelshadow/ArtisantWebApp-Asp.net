@@ -1,0 +1,10 @@
+.w-testimonials {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0 0;
+  @media screen and (max-width: 640px) {
+    padding: 0;
+    @include mobile-flex(90%);
+
+  }
+}

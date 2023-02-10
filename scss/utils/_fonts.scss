@@ -5,7 +5,7 @@
 }
 
 // color
-$f-colors: (primary, secondary, dark, light);
+$f-colors: (primary, secondary, dark, light,grey);
 @each $color in $f-colors {
   .f-color_#{$color} {
     color: var(--#{$color});

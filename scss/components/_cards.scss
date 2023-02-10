@@ -1,0 +1,47 @@
+.card-product {
+  position: relative;
+  background: var(--bg);
+  transition: all 0.75s var(--ease-o3) ;
+  border: 2px solid var(--gsw);
+
+  a {
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    height: 100%;
+  }
+
+  .c-img {
+    border-bottom : 2px solid var(--gsw)
+  }
+
+  .w-product_name {
+    padding:8px 0 4px;
+  }
+
+  .w-product_price {
+    opacity:0.9;
+    margin:0px
+  }
+
+
+}
+
+.w-btn {
+  justify-content: center;
+  padding: 0 0 12px
+}
+.add_to_cart {
+  border: 2px solid var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:4px 8px;
+  &::after {
+    color: var(--primary);
+  }
+
+}
+
+
+

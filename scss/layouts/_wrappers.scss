@@ -6,4 +6,19 @@
   display: flex;
   justify-content: space-between;
 }
+.w-products_row_title, .w-section_title {
+  h3 {
+    @extend .f-48px;
+    @extend .f-color_primary;
+    text-transform:capitalize;
+  }
 
+  margin: 0 0 16px;
+
+}
+.w-products_row {
+  display: grid;
+  gap: 18px;
+  grid-template: 1fr/ 1fr 1fr 1fr 1fr;
+
+}

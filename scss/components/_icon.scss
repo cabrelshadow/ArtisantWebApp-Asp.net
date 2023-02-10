@@ -81,3 +81,22 @@
     }
   }
 }
+
+.c-icon--svg {
+  width: 20px;
+  svg {
+    fill: var(--grey);
+
+  }
+}
+blockquote cite::before {
+  content: "\2014 \0020";
+}
+.c-svg {
+  fill: var(--primary);
+  &.footer {
+    fill: var(--light);
+
+
+  }
+}
