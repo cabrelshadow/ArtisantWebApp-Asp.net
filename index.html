@@ -6,6 +6,17 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/css/style.css">
+    <style>
+        @font-face {
+            font-family: 'Satoshi-Variable';
+            src: url('/fonts/satoshi/Satoshi-Variable.woff2') format('woff2'),
+            url('/fonts/satoshi/Satoshi-Variable.woff') format('woff'),
+            url('/fonts/satoshi/Satoshi-Variable.ttf') format('truetype');
+            font-weight: 300 900;
+            font-display: swap;
+            font-style: normal;
+        }
+    </style>
     <title>Artisant web</title>
 </head>
 <body>
@@ -22,16 +33,18 @@
             <section class="l-about">
                 <div class="l-rl">
                     <div class="l-tb">
-                        <div class="w-about">
+                        <div class="w-about w-flex">
                             <div class="c-img">
-                                <img src="" alt="">
+                                <img src="/media/c.avif" alt="">
                             </div>
                             <div class="w-text">
                                 <h3>
-                                    <span></span>
+                                    <span>Titre h3</span>
                                 </h3>
-                                <p><span></span></p>
-                                <p><span></span></p>
+                                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam cupiditate explicabo modi reiciendis. Alias aut consectetur consequuntur dolor doloribus magnam nemo, reprehenderit veritatis.</span>
+                                </p>
+                                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolorem dolorum explicabo, mollitia placeat sapiente ullam vero? Amet ex facere id labore laboriosam tenetur. Asperiores eligendi, enim laboriosam minima odit provident quidem.</span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -42,7 +55,7 @@
                     <div class="l-tb">
                         <div class="w-about">
                             <div class="w-section_title">
-                                <h3 class="f-hidden f-center">
+                                <h3 class=" f-center">
                                     <span>Nos témoignage!</span>
                                 </h3>
                             </div>
@@ -95,7 +108,7 @@
                 <div class="l-rl">
                     <div class="l-tb">
                         <div class="w-products_row_title">
-                            <h3 class="f-hidden f-center">
+                            <h3 class=" f-center">
                                 <span>Nos services</span>
                             </h3>
                         </div>
@@ -108,11 +121,69 @@
                                              alt="Image de produit">
                                     </div>
                                     <div class="w-text products">
-                                        <h3 class="w-product_name f-hidden f-center f-24px ">
-                                            <span>FANBYN</span>
+                                        <h3 class="w-product_name  f-center f-24px ">
+                                            <span>CHAISE</span>
                                         </h3>
-                                        <p class="w-product_price f-hidden f-20px f-center">
-                                            <span>5$</span>
+                                        <p class="w-product_price  f-20px f-center">
+                                            <span>5,00$</span>
+                                        </p>
+                                    </div>
+                                    <div class="w-flex w-btn">
+                                        <button class="cta-atc add_to_cart f-18px"
+                                                data-name=""
+                                                type="button"
+                                                title='Ajouter au panier le produit '
+                                                data-id=""
+                                                data-qty="1">
+                                            Acheter
+                                        </button>
+
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class="card-product">
+                                <a href="/" class="_a">
+                                    <div class="c-img products">
+                                        <img src="/media/c.avif"
+                                             loading="lazy"
+                                             alt="Image de produit">
+                                    </div>
+                                    <div class="w-text products">
+                                        <h3 class="w-product_name  f-center f-24px ">
+                                            <span>CHAISE</span>
+                                        </h3>
+                                        <p class="w-product_price  f-20px f-center">
+                                            <span>5,00$</span>
+                                        </p>
+                                    </div>
+                                    <div class="w-flex w-btn">
+                                        <button class="cta-atc add_to_cart f-18px"
+                                                data-name=""
+                                                type="button"
+                                                title='Ajouter au panier le produit '
+                                                data-id=""
+                                                data-qty="1">
+                                            Acheter
+                                        </button>
+
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class="card-product">
+                                <a href="/" class="_a">
+                                    <div class="c-img products">
+                                        <img src="/media/c.avif"
+                                             loading="lazy"
+                                             alt="Image de produit">
+                                    </div>
+                                    <div class="w-text products">
+                                        <h3 class="w-product_name  f-center f-24px ">
+                                            <span>CHAISE</span>
+                                        </h3>
+                                        <p class="w-product_price  f-20px f-center">
+                                            <span>5,00$</span>
                                         </p>
                                     </div>
                                     <div class="w-flex w-btn">
@@ -139,21 +210,21 @@
                     <div class="l-rl">
                         <div class="w-footer w-flex">
                             <nav class="w-nav_footer">
-                                <h3 class="f-hidden">
+                                <h3>
                                     <span>Menu</span>
                                 </h3>
                                 <ul class="ul-nav_footer">
-                                    <li class="nav_link f-hidden">
+                                    <li class="nav_link ">
                                         <a class="f-color_light  _a" href="/">
                                             Acceuil
                                         </a>
                                     </li>
-                                    <li class="nav_link f-hidden">
+                                    <li class="nav_link ">
                                         <a class="f-color_light  _a" href="/">
                                             Nos Services
                                         </a>
                                     </li>
-                                    <li class="nav_link f-hidden">
+                                    <li class="nav_link ">
                                         <a class="f-color_light  _a" href="/">
                                             A propos
                                         </a>
@@ -161,17 +232,17 @@
                                 </ul>
                             </nav>
                             <div class="w-contact_footer">
-                                <h3 class="f-hidden">
+                                <h3>
                                     <span>Contact</span>
                                 </h3>
                                 <ul class="ul-contact_footer">
-                                    <li class=" f-hidden">
+                                    <li class=" ">
                                         <a class="f-color_light " title="Appeler"
                                            href="tel:+237697498688">6 97 49 86 88</a>
                                         <span>:</span>
                                         <span class=" c-icon  phone"></span>
                                     </li>
-                                    <li class="f-hidden">
+                                    <li>
                                         <span>Makepe, Douala</span>
                                         <span>:</span>
                                         <span class=" c-icon  address "></span>
@@ -184,18 +255,18 @@
                         </div>
                         <div class="w-attribution w-flex--sb">
                             <ul class="ul-footer">
-                                <li class="f-hidden">
+                                <li>
                                     <a class=" f-color_light _a"
                                        href="/conditions-generales-de-vente">Conditions Générales de Ventes</a>
                                 </li>
-                                <li class="f-hidden">
+                                <li>
                                     <span>|</span>
                                 </li>
-                                <li class="f-hidden">
+                                <li>
                                     <a class=" f-color_light _a" href="/mentions-legales">Mentions Légales</a>
                                 </li>
                             </ul>
-                            <p class="f-hidden">
+                            <p>
                                 <span>© Copyright -  </span>
                                 <span class=" f-upper"> la2spaille</span>
                             </p>

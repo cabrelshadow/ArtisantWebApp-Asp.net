@@ -16,27 +16,30 @@
   }
 
   .w-product_name {
-    padding:8px 0 4px;
+    padding:12px 0 4px;
+    line-height:1;
   }
 
   .w-product_price {
     opacity:0.9;
-    margin:0px
+    margin:0px;
+    line-height:1;
   }
 
 
 }
 
 .w-btn {
-  justify-content: center;
-  padding: 0 0 12px
+  justify-content:center;
+  padding: 0 0 12px;
+  margin: 16px  0 0
 }
 .add_to_cart {
   border: 2px solid var(--primary);
   display: flex;
-  align-items: center;
   justify-content: center;
   padding:4px 8px;
+  flex-basis: calc(100% - 24px);
   &::after {
     color: var(--primary);
   }

@@ -13,10 +13,9 @@
   --icon-font: "Material Symbols Outlined";
   --icon-font-size:20px;
   /* font-family */
-  --font-family-primary:"NewTitle-Variable";
-  --font-family-secondary:"Amulya-Variable";
-  --font-family-secondary-italic:"Amulya-VariableItalic";
-  --font-family-logo: "NewTitle-Variable";
+  --font-family-primary:"Satoshi-Variable";
+  --font-family-secondary:"Satoshi-Variable";
+  --font-family-logo: "Satoshi-Variable";
   /* utils */
   --min-height:100vh;
   --header-height: 90px;
@@ -149,7 +148,7 @@
   line-height: 2.5rem;
 }
 
-.f-48px, .w-products_row_title h3, .w-section_title h3 {
+.f-48px, .w-about .w-text h3, .w-products_row_title h3, .w-section_title h3 {
   font-size: 3rem;
   line-height: 1;
 }
@@ -612,24 +611,27 @@ body {
   border-bottom: 2px solid var(--gsw);
 }
 .card-product .w-product_name {
-  padding: 8px 0 4px;
+  padding: 12px 0 4px;
+  line-height: 1;
 }
 .card-product .w-product_price {
   opacity: 0.9;
   margin: 0px;
+  line-height: 1;
 }
 
 .w-btn {
   justify-content: center;
   padding: 0 0 12px;
+  margin: 16px 0 0;
 }
 
 .add_to_cart {
   border: 2px solid var(--primary);
   display: flex;
-  align-items: center;
   justify-content: center;
   padding: 4px 8px;
+  flex-basis: calc(100% - 24px);
 }
 .add_to_cart::after {
   color: var(--primary);
@@ -906,8 +908,8 @@ main {
 
 .w-products_row {
   display: grid;
-  gap: 18px;
-  grid-template: 1fr/1fr 1fr 1fr 1fr;
+  gap: 24px;
+  grid-template: 1fr/1fr 1fr 1fr;
 }
 
 h1 {
@@ -937,7 +939,7 @@ section .l-rl {
   padding: 0 32px;
 }
 section .l-tb {
-  padding: 128px 0 64px;
+  padding: 32px 0 64px;
 }
 
 .w-testimonials {
@@ -954,6 +956,22 @@ section .l-tb {
   .w-testimonials > * {
     width: 90%;
   }
+}
+
+.w-about > div {
+  flex-basis: 50%;
+}
+.w-about .c-img {
+  border: 2px solid var(--primary);
+  margin: 0 24px;
+  max-height: 50vh;
+}
+.w-about .w-text {
+  padding: 0 24px;
+  align-self: center;
+}
+.w-about .w-text h3 {
+  margin: 0 0 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
