@@ -743,7 +743,8 @@ main {
 }
 
 #nav {
-  display: flex;
+  display: grid;
+  grid-template: auto/auto auto 1fr;
   padding: 16px 0;
   background: var(--primary);
   color: var(--light);
@@ -780,10 +781,16 @@ main {
   display: flex;
   align-items: center;
   align-self: stretch;
+  justify-self: flex-end;
   gap: 32px;
 }
 .ul-cta_header li {
   line-height: 1;
+}
+
+.header_avatar .c-img {
+  border-radius: 50%;
+  height: 30px;
 }
 
 #home #footer {

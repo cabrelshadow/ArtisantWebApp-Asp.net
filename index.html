@@ -9,9 +9,9 @@
     <style>
         @font-face {
             font-family: 'Satoshi-Variable';
-            src: url('/fonts/satoshi/Satoshi-Variable.woff2') format('woff2'),
-            url('/fonts/satoshi/Satoshi-Variable.woff') format('woff'),
-            url('/fonts/satoshi/Satoshi-Variable.ttf') format('truetype');
+            src: url('fonts/satoshi/Satoshi-Variable.woff2') format('woff2'),
+            url('fonts/satoshi/Satoshi-Variable.woff') format('woff'),
+            url('fonts/satoshi/Satoshi-Variable.ttf') format('truetype');
             font-weight: 300 900;
             font-display: swap;
             font-style: normal;
@@ -22,6 +22,42 @@
 <body>
 <div id="app">
     <div id="main">
+        <div id="header">
+            <div id="nav">
+                <div class="c-logo header f-600 f-30px ">
+                    <a href="">Logo.</a>
+                </div>
+                <nav class="w-nav_header">
+                    <ul class="ul-nav_header">
+                        <li class="nav_link is-active">
+                            <a data-text="Acceuil" href="" title="Acceuil"
+                               class="  f-600">Acceuil</a>
+                        </li>
+                        <li class="nav_link">
+                            <a data-text="Services" href="services.html" title="Services"
+                               class="  f-600">Services</a>
+                        </li>
+                        <li class="nav_link">
+                            <a data-text="A propos" href="a-propos" title="A propos"
+                               class="  f-600">A propos</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="ul-cta_header">
+                    <li class="header_avatar">
+                        <div class="c-img">
+                            <img src="media/a.png" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="f-under">Inscription/connexion</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
         <div class="page p-home">
             <section class="l-hero">
                 <div class="l-rl">
@@ -287,37 +323,6 @@
                     </div>
                 </div>
             </footer>
-
-        </div>
-    </div>
-    <div id="header">
-        <div id="nav">
-            <div class="c-logo header f-600 f-30px ">
-                <a href="">Logo.</a>
-            </div>
-            <nav class="w-nav_header">
-                <ul class="ul-nav_header">
-                    <li class="nav_link is-active">
-                        <a data-text="Acceuil" href="" title="Acceuil"
-                           class="  f-600">Acceuil</a>
-                    </li>
-                    <li class="nav_link">
-                        <a data-text="Services" href="services.html" title="Services"
-                           class="  f-600">Services</a>
-                    </li>
-                    <li class="nav_link">
-                        <a data-text="A propos" href="a-propos" title="A propos"
-                           class="  f-600">A propos</a>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="ul-cta_header f-color_primary">
-                <li>
-                    <div class="c-img">
-                        <img src="" alt="">
-                    </div>
-                </li>
-            </ul>
         </div>
     </div>
 </div>
