@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
 }
-.w-products_row_title, .w-section_title {
+.w-products_row_title, .w-section_title,.w-list_row_title {
   h3 {
     @extend .f-48px;
     @extend .f-color_primary;
@@ -16,9 +16,13 @@
   margin: 0 0 16px;
 
 }
-.w-products_row {
+.w-products_row,.w-products_list {
   display: grid;
   gap: 24px;
   grid-template: 1fr/ 1fr 1fr 1fr ;
+
+}
+.w-products_list {
+  grid-template: auto / 1fr 1fr 1fr ;
 
 }

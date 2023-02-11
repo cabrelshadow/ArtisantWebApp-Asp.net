@@ -8,7 +8,7 @@
   --dark:#181719;
   --l-grey:#F2EFE9;
   --grey: #798086;
-  --bg: #F2F2F2;
+  --bg: #FCFCFC;
   /* icon */
   --icon-font: "Material Symbols Outlined";
   --icon-font-size:20px;
@@ -67,7 +67,7 @@
   - 192px : 12rem
   - 256px : 16rem
  */
-.f-color_primary, .w-products_row_title h3, .w-section_title h3 {
+.f-color_primary, .w-products_row_title h3, .w-section_title h3, .w-list_row_title h3 {
   color: var(--primary);
 }
 
@@ -148,7 +148,7 @@
   line-height: 2.5rem;
 }
 
-.f-48px, .w-about .w-text h3, .w-products_row_title h3, .w-section_title h3 {
+.f-48px, .w-about .w-text h3, .w-hero .w-text h3, .w-products_row_title h3, .w-section_title h3, .w-list_row_title h3 {
   font-size: 3rem;
   line-height: 1;
 }
@@ -745,7 +745,8 @@ main {
 #nav {
   display: flex;
   padding: 16px 0;
-  background: var(--light);
+  background: var(--primary);
+  color: var(--light);
   position: relative;
 }
 #nav .c-logo {
@@ -768,7 +769,10 @@ main {
 .ul-nav_header li {
   letter-spacing: 1px;
 }
-.ul-nav_header li:not(:first-child) {
+.ul-nav_header li a {
+  color: var(--light);
+}
+.ul-nav_header li:not(.is-active) {
   opacity: 0.9;
 }
 
@@ -899,17 +903,21 @@ main {
   justify-content: space-between;
 }
 
-.w-products_row_title, .w-section_title {
+.w-products_row_title, .w-section_title, .w-list_row_title {
   margin: 0 0 16px;
 }
-.w-products_row_title h3, .w-section_title h3 {
+.w-products_row_title h3, .w-section_title h3, .w-list_row_title h3 {
   text-transform: capitalize;
 }
 
-.w-products_row {
+.w-products_row, .w-products_list {
   display: grid;
   gap: 24px;
   grid-template: 1fr/1fr 1fr 1fr;
+}
+
+.w-products_list {
+  grid-template: auto/1fr 1fr 1fr;
 }
 
 h1 {
@@ -935,6 +943,10 @@ h1 {
   letter-spacing: 0.5px;
 }
 
+.page {
+  padding: var(--header-height) 0 0;
+}
+
 section .l-rl {
   padding: 0 32px;
 }
@@ -958,20 +970,21 @@ section .l-tb {
   }
 }
 
-.w-about > div {
+.w-about > div, .w-hero > div {
   flex-basis: 50%;
 }
+.w-about .w-text, .w-hero .w-text {
+  padding: 0 24px;
+  align-self: center;
+}
+.w-about .w-text h3, .w-hero .w-text h3 {
+  margin: 0 0 16px;
+}
+
 .w-about .c-img {
   border: 2px solid var(--primary);
   margin: 0 24px;
   max-height: 50vh;
-}
-.w-about .w-text {
-  padding: 0 24px;
-  align-self: center;
-}
-.w-about .w-text h3 {
-  margin: 0 0 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

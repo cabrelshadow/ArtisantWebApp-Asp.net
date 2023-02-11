@@ -8,21 +8,29 @@
 
   }
 }
-.w-about {
-  &>div {
-    flex-basis:50%;
+
+.w-about, .w-hero {
+  & > div {
+    flex-basis: 50%;
   }
-  .c-img {
-    border: 2px solid var(--primary);
-    margin:0 24px;
-    max-height:50vh
-  }
+
   .w-text {
-    padding:0 24px;
-    align-self:center;
+    padding: 0 24px;
+    align-self: center;
+
     h3 {
       @extend .f-48px;
-      margin: 0  0 16px;
+      margin: 0 0 16px;
     }
   }
+}
+.w-about {
+  .c-img {
+    border: 2px solid var(--primary);
+    margin: 0 24px;
+    max-height: 50vh
+  }
+}
+.w-hero {
+
 }

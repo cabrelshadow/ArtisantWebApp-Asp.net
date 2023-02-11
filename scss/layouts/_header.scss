@@ -8,7 +8,8 @@
 #nav {
   display: flex;
   padding: 16px 0;
-  background: var(--light);
+  background: var(--primary);
+  color:var(--light);
   position: relative;
   .c-logo {
     border-right:1px solid var(--l-grey)
@@ -33,9 +34,12 @@
 
   li {
     letter-spacing: 1px;
+    a {
+      color:var(--light);
 
+    }
   }
-  li:not(:first-child){
+  li:not(.is-active){
     opacity : 0.9;
   }
 
